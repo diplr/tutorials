@@ -2,29 +2,16 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>spring-cloud-eureka-server</artifactId>
+    <artifactId>spring-restdocs</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>spring-cloud-eureka-server</name>
-    <packaging>pom</packaging>
+    <name>spring-restdocs</name>
 
     <parent>
         <groupId>org.diplr</groupId>
-        <artifactId>spring-cloud-eureka</artifactId>
+        <artifactId>spring</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>..</relativePath>
     </parent>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-parent</artifactId>
-                <version>${spring-cloud-dependencies.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <pluginManagement>
@@ -37,5 +24,10 @@
             </plugins>
         </pluginManagement>
     </build>
+
+
+    <properties>
+        <spring-boot-maven-plugin.version>2.1.3.RELEASE</spring-boot-maven-plugin.version>
+    </properties>
 
 </project>

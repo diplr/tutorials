@@ -1,4 +1,4 @@
-package org.diplr.quarkus.core;
+package org.diplr.quarkus.core.controller;
 
 import org.diplr.quarkus.core.service.GreeterService;
 
@@ -9,7 +9,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 @Path("/greeting")
-public class GreeterResource {
+public class GreeterController {
 
     @Inject
     GreeterService greeterService;

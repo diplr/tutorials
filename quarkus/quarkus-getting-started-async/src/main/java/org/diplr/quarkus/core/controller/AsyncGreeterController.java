@@ -10,7 +10,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.concurrent.CompletableFuture;
 
 @Path("/greeting")
-public class GreeterController {
+public class AsyncGreeterController {
 
     @Inject
     GreeterService greeterService;

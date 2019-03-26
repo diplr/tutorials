@@ -17,6 +17,7 @@
     <modules>
         <module>quarkus-getting-started</module>
         <module>quarkus-getting-started-async</module>
+        <module>quarkus-websocket</module>
     </modules>
 
     <dependencyManagement>

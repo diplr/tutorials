@@ -7,18 +7,22 @@
     <name>quarkus</name>
     <packaging>pom</packaging>
 
-    <parent>
-        <groupId>org.diplr</groupId>
-        <artifactId>diplr-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-        <relativePath>..</relativePath>
-    </parent>
+    <groupId>org.diplr</groupId>
 
     <modules>
         <module>quarkus-getting-started</module>
         <module>quarkus-getting-started-async</module>
         <module>quarkus-websocket</module>
     </modules>
+
+    <properties>
+        <quarkus.version>0.12.0</quarkus.version>
+        <surefire-plugin.version>2.22.0</surefire-plugin.version>
+        <maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -31,9 +35,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <properties>
-        <quarkus.version>0.12.0</quarkus.version>
-    </properties>
 
 </project>

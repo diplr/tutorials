@@ -1,7 +1,7 @@
 package org.diplr.quarkus.core.controller;
 
 import io.quarkus.test.junit.QuarkusTest;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;

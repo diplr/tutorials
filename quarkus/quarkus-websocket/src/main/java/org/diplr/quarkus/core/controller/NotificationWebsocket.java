@@ -18,6 +18,14 @@ public class NotificationWebsocket {
     @OnOpen
     public void connectionOpened(final Session session) {
         activeSessions.put(session.getId(), session);
+        activeSessions.values()
+                      .forEach(s -> s.getAsyncRemote()
+                                                 .sendObject("someone just joined this page", sendResult ->
+                                                 {
+                                                     if (!sendResult.isOK()) {
+                                                         System.out.println(sendResult.getException().getMessage());
+                                                     }
+                                                 }));
     }
 
     @OnClose

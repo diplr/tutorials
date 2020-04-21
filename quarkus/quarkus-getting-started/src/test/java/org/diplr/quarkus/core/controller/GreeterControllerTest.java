@@ -12,7 +12,7 @@ public class GreeterControllerTest {
     @Test
     public void greetReturnsHelloWorld() {
         given()
-                .when().get("/greeting")
+                .when().get("/hello")
                 .then()
                 .statusCode(is(200))
                 .body(is("hello world"));

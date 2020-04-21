@@ -4,13 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>spring-cloud-feign-simple</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>spring-cloud-feign-client</name>
+    <name>spring-cloud-feign-simle</name>
 
     <parent>
         <groupId>org.diplr</groupId>
-        <artifactId>spring-cloud-eureka</artifactId>
+        <artifactId>spring-cloud-feign</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>..</relativePath>
     </parent>
 
     <dependencies>
